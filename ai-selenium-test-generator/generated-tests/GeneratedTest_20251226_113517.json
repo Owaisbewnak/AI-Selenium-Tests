@@ -1,0 +1,82 @@
+{
+  "testCaseName": "Login and Verify Upcoming Anniversaries on Buzz",
+  "description": "Registered user logs into OrangeHRM with valid credentials, navigates to the Buzz page, verifies the 'Upcoming Anniversaries' panel is displayed, and captures the list of people with upcoming anniversaries.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "action": "Navigate to URL",
+      "target": "https://opensource-demo.orangehrmlive.com/",
+      "inputValues": null,
+      "expectedValidation": [
+        "Login page is displayed",
+        "Username and Password fields are visible",
+        "Login button is visible",
+        "Page title contains 'OrangeHRM'"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "action": "Enter username",
+      "target": "Username input field on login page",
+      "inputValues": {
+        "username": "Admin"
+      },
+      "expectedValidation": [
+        "Username field contains 'Admin'"
+      ]
+    },
+    {
+      "stepNumber": 3,
+      "action": "Enter password",
+      "target": "Password input field on login page",
+      "inputValues": {
+        "password": "admin123"
+      },
+      "expectedValidation": [
+        "Password field accepts input and is masked"
+      ]
+    },
+    {
+      "stepNumber": 4,
+      "action": "Click",
+      "target": "Login button",
+      "inputValues": null,
+      "expectedValidation": [
+        "User is redirected to the Dashboard",
+        "Dashboard header is visible",
+        "Left navigation/menu is visible and contains a 'Buzz' menu item"
+      ]
+    },
+    {
+      "stepNumber": 5,
+      "action": "Click",
+      "target": "Buzz menu item in the left navigation",
+      "inputValues": null,
+      "expectedValidation": [
+        "Buzz page loads successfully",
+        "Page header or breadcrumb contains 'Buzz'"
+      ]
+    },
+    {
+      "stepNumber": 6,
+      "action": "Verify visibility",
+      "target": "'Upcoming Anniversaries' panel on the Buzz page",
+      "inputValues": null,
+      "expectedValidation": [
+        "'Upcoming Anniversaries' panel is present and visible",
+        "Panel title text equals 'Upcoming Anniversaries'"
+      ]
+    },
+    {
+      "stepNumber": 7,
+      "action": "Capture and log list",
+      "target": "Names/items listed under the 'Upcoming Anniversaries' panel",
+      "inputValues": null,
+      "expectedValidation": [
+        "All displayed names in the 'Upcoming Anniversaries' panel are captured",
+        "Names are printed/logged in the test report or console",
+        "If no names are present, log 'No upcoming anniversaries'"
+      ]
+    }
+  ]
+}

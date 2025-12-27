@@ -1,0 +1,83 @@
+{
+  "testCaseName": "Login to OrangeHRM and Verify Personal Details - First Name Not Empty",
+  "description": "Registered user logs in to the OrangeHRM demo site, navigates to My Info, reads the First Name, prints it, and asserts it is not empty.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "action": "Navigate",
+      "target": "https://opensource-demo.orangehrmlive.com/",
+      "data": null,
+      "expectedValidation": "Application loads successfully."
+    },
+    {
+      "stepNumber": 2,
+      "action": "Verify Page Title",
+      "target": "Browser Page Title",
+      "data": "OrangeHRM",
+      "expectedValidation": "Page title equals 'OrangeHRM'."
+    },
+    {
+      "stepNumber": 3,
+      "action": "Enter Text",
+      "target": "Username input field on Login form",
+      "data": "Admin",
+      "expectedValidation": "Username value is populated with 'Admin'."
+    },
+    {
+      "stepNumber": 4,
+      "action": "Enter Text",
+      "target": "Password input field on Login form",
+      "data": "admin123",
+      "expectedValidation": "Password value is populated."
+    },
+    {
+      "stepNumber": 5,
+      "action": "Click",
+      "target": "Login button on Login form",
+      "data": null,
+      "expectedValidation": "Login request is submitted."
+    },
+    {
+      "stepNumber": 6,
+      "action": "Verify Page Loaded",
+      "target": "Dashboard page",
+      "data": null,
+      "expectedValidation": "Dashboard is displayed (e.g., 'Dashboard' header visible and/or URL indicates dashboard)."
+    },
+    {
+      "stepNumber": 7,
+      "action": "Click",
+      "target": "My Info menu item in left sidebar",
+      "data": null,
+      "expectedValidation": "Navigation to My Info page is initiated."
+    },
+    {
+      "stepNumber": 8,
+      "action": "Verify Section Visible",
+      "target": "Personal Details section on My Info page",
+      "data": null,
+      "expectedValidation": "'Personal Details' section header is displayed."
+    },
+    {
+      "stepNumber": 9,
+      "action": "Read Value",
+      "target": "First Name input field in Personal Details",
+      "data": null,
+      "expectedValidation": "First Name value is captured and stored as variable 'firstNameValue'."
+    },
+    {
+      "stepNumber": 10,
+      "action": "Print to Console",
+      "target": "Variable 'firstNameValue'",
+      "data": null,
+      "expectedValidation": "First Name value is printed to the console."
+    },
+    {
+      "stepNumber": 11,
+      "action": "Assert Not Empty",
+      "target": "Variable 'firstNameValue'",
+      "data": null,
+      "expectedValidation": "First Name value is not null, not empty, and not whitespace-only."
+    }
+  ]
+}

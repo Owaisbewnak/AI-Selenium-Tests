@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">80,361</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">OrangeHRMLoginPersonalDetailsTestWithExtentTest</td><td><a href="#m0">loginAndVerifyFirstNameIsNotEmpty</a></td><td rowspan="1">1766819040209</td><td rowspan="1">13531</td></tr><tr class="failedodd"><td rowspan="1">OrangeHRMLoginTests</td><td><a href="#m1">TC002_Login_Success_Validate_Title_and_Dashboard_Elements</a></td><td rowspan="1">1766819086550</td><td rowspan="1">11681</td></tr><tr class="failedeven"><td rowspan="1">OrangeHrmMyInfoFirstNameTest</td><td><a href="#m2">loginAndVerifyFirstNameIsNotEmpty</a></td><td rowspan="1">1766819105413</td><td rowspan="1">10667</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">OrangeHRMLoginTest</td><td><a href="#m3">shouldLoginWithValidCredentialsAndSeeDashboard</a></td><td rowspan="1">1766819056260</td><td rowspan="1">15338</td></tr><tr class="passedodd"><td rowspan="2">OrangeHRMLoginTests</td><td><a href="#m4">TC001_Login_Success_Dashboard_Visible</a></td><td rowspan="1">1766819080656</td><td rowspan="1">5003</td></tr><tr class="passedodd"><td><a href="#m5">TC003_Login_Failure_Invalid_Credentials</a></td><td rowspan="1">1766819100176</td><td rowspan="1">3577</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">OrangeHRMLoginPersonalDetailsTestWithExtentTest#loginAndVerifyFirstNameIsNotEmpty</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: java.lang.AssertionError: First Name value should not be null/empty/whitespace-only. expected [true] but found [false]
+	at OrangeHRMLoginPersonalDetailsTestWithExtentTest.loginAndVerifyFirstNameIsNotEmpty(OrangeHRMLoginPersonalDetailsTestWithExtentTest.java:157)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.AssertionError: First Name value should not be null/empty/whitespace-only. expected [true] but found [false]
+	at OrangeHRMLoginPersonalDetailsTestWithExtentTest.loginAndVerifyFirstNameIsNotEmpty(OrangeHRMLoginPersonalDetailsTestWithExtentTest.java:144)
+	... 31 more
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">OrangeHRMLoginTests#TC002_Login_Success_Validate_Title_and_Dashboard_Elements</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: User is redirected to the dashboard expected [true] but found [false]
+	at OrangeHRMLoginTests.TC002_Login_Success_Validate_Title_and_Dashboard_Elements(OrangeHRMLoginTests.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">OrangeHrmMyInfoFirstNameTest#loginAndVerifyFirstNameIsNotEmpty</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: First Name value should not be empty or whitespace-only. expected [false] but found [true]
+	at OrangeHrmMyInfoFirstNameTest.loginAndVerifyFirstNameIsNotEmpty(OrangeHrmMyInfoFirstNameTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">OrangeHRMLoginTest#shouldLoginWithValidCredentialsAndSeeDashboard</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">OrangeHRMLoginTests#TC001_Login_Success_Dashboard_Visible</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">OrangeHRMLoginTests#TC003_Login_Failure_Invalid_Credentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
